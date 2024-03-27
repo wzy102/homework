@@ -1,0 +1,25 @@
+
+p,h1,h2 {
+	font-family: Arial;
+	color: grey;
+}
+h1 {
+	border-bottom:1px solid black;
+}
+p {
+	color: maroon;
+}
+em {
+  font-family: "Cascadia Mono";
+}
+html {
+  font-size: 16px; /* 设置根元素字体大小 */ 
+}
+
+h1 {
+  font-size: 2rem; /* 相对于根元素字体大小的 2 倍 */
+}
+
+p {
+  font-size: 1rem;
+}
