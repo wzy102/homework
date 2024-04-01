@@ -1,13 +1,10 @@
 
 p,h1,h2 {
 	font-family: Arial;
-	color: grey;
+	color: #999999;
 }
 h1 {
-	border-bottom:1px solid black;
-}
-p {
-	color: maroon;
+	border-bottom:1px solid #000000;
 }
 em {
   font-family: "Cascadia Mono";
@@ -22,4 +19,10 @@ h1 {
 
 p {
   font-size: 1rem;
+}
+body{
+	background-color:#ffffff;
+}
+a{
+  text-decoration: none;
 }
