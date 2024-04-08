@@ -98,7 +98,7 @@ h2 {
 	font-size: 1.3em;
 }
 
-.guarantee {
+#guarantee {
   border-color:white;
   background-color:#a7cece;
   color: #444444;
@@ -109,4 +109,15 @@ h2 {
   line-height: 1.9em;
   padding: 25px;
   margin: 30px;
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 25px;
+  padding-left: 80px;
+  margin-right: 250px;
+  border-color: #ffffff;
+  border-width: thick;
+  border-style: dotted;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
