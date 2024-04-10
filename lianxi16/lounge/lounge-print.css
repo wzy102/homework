@@ -32,8 +32,7 @@ h2 {
 #elixirs {
   font-family: Verdana, Helvetica, Arial, sans-serif; 
   width: 200px;
-  background-color: #ffffff;
-  background: url("images/elixirbackground.gif") repeat-x top center;
+  background: #ffffff url("images/elixirbackground.gif") repeat-x top center;
   padding: 0px 20px 20px 20px;
   margin-left: 25px;
   color: #000000;
@@ -127,12 +126,9 @@ h2 {
 	border-style: solid;
 	border-color: #007e7e;
   width: 200px;
-  padding-right: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
+  padding:0px 20px 20px;
 	margin-left: 20px;
-  background-image: url(images/cocktail.gif);
-	background-repeat: repeat-x;
+  background: url(images/cocktail.gif) repeat-x;
   text-align: center;
   line-height: 1;
 }
@@ -143,4 +139,25 @@ div h2 {
 
 .elixirs h3 {
   color: #d12c47;
+}
+
+.cd{
+  font-style: italic;
+}
+
+.artist{
+  font-weight: bold;
+}
+
+.elixirs a:link {
+  color: #007e7e;
+}
+
+.elixirs a:visited {
+  color: #333333;
+}
+
+.elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
 }
