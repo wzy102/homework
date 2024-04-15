@@ -1,0 +1,30 @@
+h1, h2 {
+		font-weight: 600;
+	}
+h1 {
+	  font-weight: 200;
+  }
+
+p{
+    color: chocolate;
+}
+
+p.cname{
+    color: blueviolet;
+}
+
+p#iname{
+    color: aqua;
+}
+
+body h1{
+  background-color: blueviolet;
+}
+
+p h1{
+  background-color: brown;
+}
+
+h1{
+  background-color: blue;
+}
