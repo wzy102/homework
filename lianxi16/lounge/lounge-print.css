@@ -131,6 +131,7 @@ h2 {
   background: url(images/cocktail.gif) repeat-x;
   text-align: center;
   line-height: 1;
+  float: right;
 }
 
 div h2 {
