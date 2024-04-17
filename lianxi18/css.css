@@ -1,12 +1,4 @@
-.left {
-	margin-right: 30px;
-}
-
-.right {
-	margin-left: 20px;
-}
-
-.ruler {
-	display: inline-block;
-	width: 50px;
+.float-block {
+	width: 20px;
+	float: right;
 }
