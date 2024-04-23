@@ -15,7 +15,6 @@ body {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
 }
 
 .sidebar {
@@ -25,6 +24,7 @@ body {
   margin:           0px 10px 10px 10px;
   float: right;
   width: 280px;
+
 }
 
 .footer {
@@ -34,7 +34,6 @@ body {
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear: right;
 }
 
 h1 {
@@ -66,21 +65,5 @@ a:visited {
 	padding-bottom:        5px;
 	background-color:  #675c47;
   margin: 0px auto;
-}
-
-.ad {
-	position:        absolute;
-	top:                150px;
-	left:               100px;
-	width:              600px;
-	height:              80px;
-	background-color: #ccbb00;
-}
-
-.sidebar {
-	z-index: 100;
-}
-
-.ad {
-	z-index:  1;
+  position: relative;
 }
