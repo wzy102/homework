@@ -12,18 +12,18 @@ body {
 }
 
 .header-logo {
-	/* background-image: url('images/header1.gif'); */
+	background-image: url('images/header.gif');
 	background-position-x: 0px;
 	background-position-y: 0px; 
 }
 
 .header-slogan {
-	/* background-image: url('images/header2.gif'); */
+	background-image: url('images/header.gif');
 	background-position: 260px 0px;
     float: right;
 }
 
-header {
+.header {
     background-color: #675c47;
     margin: 10px 10px 0px 10px;
     height: 108px;
@@ -46,10 +46,10 @@ header {
     background: #efe5d0 url(images/background.gif) top left;
     font-size: 105%;
     padding: 15px;
-    margin: 0px 300px 10px 10px;
+    /* margin: 0px 300px 10px 10px; */
 }
 
-aside {
+.sidebar {
     display: table-cell;
     vertical-align: top;
     background: #efe5d0 url(images/background.gif) bottom right;
@@ -66,7 +66,7 @@ aside {
     padding: 15px;
 }
 
-footer {
+.footer {
     background-color: #675c47;
     color: #efe5d0;
     text-align: center;
@@ -102,60 +102,12 @@ a:visited {
     border-bottom: thin dotted #675c47;
 }
 
-.award {
-	position: absolute;
-	top: 30px;
-	left: 45%;
-}
-
-.coupon { 
-	position: fixed; 
-	top: 350px; 
-	left: -210px; 
-	transition: left 1s ease;
-}
-
-.coupon:hover {
-	left: 0px;
-}
-
-.coupon a, img{
-	border: none;
-}
-
 .all-content {
     width: 1000px;
-    height: 200px;
-    background-color: aqua;
+    /* height: 200px; */
+    /* background-color: aqua; */
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #675c47;
+    /* background-color: #675c47; */
     margin: 0px auto;
-}
-
-ul {
-	margin: 0px;
-	list-style-type: none;
-	padding: 5px 0px 5px 0px;
-}
-
-ul li {
-	display: inline;
-	padding: 5px 10px 5px 10px;
-}
-
-ul li a:link, nav ul li a:visited {
-	color: #ffffff;
-	border-bottom: none;
-	font-weight: bold;
-}
-
-ul li.selected {
-	background-color: #c8b99c;
-}
-
-nav ul {
-	margin: 0px;
-	list-style-type: none;
-	padding: 5px 0px 5px 0px;
 }
