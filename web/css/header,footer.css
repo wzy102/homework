@@ -1,0 +1,19 @@
+header {
+  background-color: #e4002b;
+}
+
+.right_header {
+  float: right;
+  font-size: 14px;
+}
+
+
+ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
