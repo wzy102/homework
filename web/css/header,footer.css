@@ -34,7 +34,7 @@ nav ul {
 
 video {
 	width: 100%;
-	height:510px;
+	height: 545px;
 	object-fit:fill;
   position: absolute;
 	z-index: -9999;
