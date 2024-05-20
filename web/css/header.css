@@ -3,9 +3,11 @@
   padding: 0;
 }
 
-image {
-  position: relative;
-  bottom: 100px;
+.image1 {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 100px;
 }
 
 header {
@@ -17,6 +19,17 @@ header {
 .right_header {
   float: right;
   font-size: 14px;
+}
+
+
+
+.r1{
+  background-color: #a6192e;
+}
+
+.r1:hover{
+  transform:background-color 0.5s linear 0s;
+  background-color: #6e182e;
 }
 
 
@@ -75,11 +88,17 @@ a{
 nav:hover .plat{
   display: block;
   clear: both;
+  white-space:nowrap;
 }
 
 nav{
-  float:left;
-  margin-left: 2px;
+  position: absolute;
+  top: 50px ;
+  float: left;
+  margin-left: 45px;
+  position: relative;
+  left: 120px;
+  white-space:nowrap;
 }
 
 .plat li:hover>a{
@@ -88,8 +107,10 @@ nav{
 
 nav :first-child:hover{
   border-bottom: 5px solid #fff;
-  border-width: thin;
+  padding-bottom: 5px;
+  border-width: 2px;
 }
+
 
 
 .tittle{
@@ -118,4 +139,11 @@ nav :first-child:hover{
   color: #000;
   transform:background-color 0.5s linear 0s;
   background-color: #fff;
+}
+
+.plat{
+  padding: auto;
+}
+.plat:hover{
+  padding: auto;
 }
