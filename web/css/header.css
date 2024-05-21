@@ -16,10 +16,6 @@ header {
   color: #fff;
 }
 
-.right_header {
-  float: right;
-  font-size: 14px;
-}
 
 
 
@@ -66,7 +62,7 @@ display: inline-block;
 margin-left: 400px;
 }
 
-ul,a{
+a{
   font-weight: bold;
   font-size: 15px;
   margin-left: 10px;
@@ -115,7 +111,7 @@ nav :first-child:hover{
 
 .tittle{
   text-align: center;
-  font-size: 75px;
+  font-size: 70px;
   color: #fff;
   position: relative;
   top: 150px;
@@ -141,9 +137,21 @@ nav :first-child:hover{
   background-color: #fff;
 }
 
-.plat{
+.plat .plat:hover{
   padding: auto;
 }
-.plat:hover{
-  padding: auto;
+
+.right_header{
+  float: right;
+  margin-right: 100px;
+}
+
+.r1,.r2,.r3{
+  display: inline-block;
+  font-size: 6px;
+}
+
+
+.r1{
+  padding: 10px 5px;
 }
