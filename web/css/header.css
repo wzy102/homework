@@ -8,6 +8,7 @@
   position: absolute;
   top: 20px;
   left: 100px;
+  z-index: 999;
 }
 
 header {
@@ -15,20 +16,6 @@ header {
 	height: 90;
   color: #fff;
 }
-
-
-
-
-.r1{
-  background-color: #a6192e;
-}
-
-.r1:hover{
-  transform:background-color 0.5s linear 0s;
-  background-color: #6e182e;
-}
-
-
 
 ul li {
 	display: inline;
@@ -49,29 +36,12 @@ video {
 	z-index: -9999;
 }
 
-.tittle {
-	z-index: 1;
-}
-
-.™ {
-display: inline-block;
-}
-
-.™1 {
-display: inline-block;
-margin-left: 400px;
-}
-
-a{
-  font-weight: bold;
-  font-size: 15px;
-  margin-left: 10px;
-  color:#fff;
-  text-decoration: none;
-}
-
 a{
   display: block;
+  color:#fff;
+  text-decoration: none;
+  text-align: justify;
+
 }
 
 .plat{
@@ -88,6 +58,17 @@ nav:hover .plat{
 }
 
 nav{
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.broad{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+nav{
   position: absolute;
   top: 50px ;
   float: left;
@@ -101,13 +82,16 @@ nav{
   background-color: #a6192e;
 }
 
-nav :first-child:hover{
+nav>a:hover{
   border-bottom: 5px solid #fff;
   padding-bottom: 5px;
   border-width: 2px;
+  font-size: initial
 }
 
-
+nav:last-child{
+  float: right;
+}
 
 .tittle{
   text-align: center;
@@ -115,6 +99,8 @@ nav :first-child:hover{
   color: #fff;
   position: relative;
   top: 150px;
+  z-index: 99;
+  /*font-style: ;*/
 }
 
 .broad{
@@ -148,10 +134,35 @@ nav :first-child:hover{
 
 .r1,.r2,.r3{
   display: inline-block;
-  font-size: 6px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 
 .r1{
   padding: 10px 5px;
+    background-color: #a6192e;
+}
+
+.r1:hover{
+  transform:background-color 0.5s linear 0s;
+  background-color: #6e182e;
+}
+
+
+.backgund{
+  display: inline-block;
+  width: 58px;
+  height: 59px;
+  background-color: #e4002b;
+  position: absolute;
+  right: 2px;
+  z-index: -999;
+  transition: all 0.1s;
+}
+
+.backgund:hover{
+  background-color: #a6192e;
+  transform:scale(1.2);
+  transition:all 0.1s ease-in-out 0s;
 }
