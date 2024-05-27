@@ -5,16 +5,22 @@
 
 .image1 {
   display: inline-block;
-  position: absolute;
+  position: absolute; /*图片定位*/
   top: 20px;
   left: 100px;
-  z-index: 999;
+  z-index: 999; /*定位后才能定义Z轴*/
+  pointer-events: none; /*使鼠标的事件效果无效化*/
+}
+
+.backgund{
+  pointer-events: auto; /*有效化阻止继承*/
 }
 
 header {
-  background-color: #e4002b;
+  background-color: #e4002b; /*文字样式*/
 	height: 90;
   color: #fff;
+  width:100%
 }
 
 ul li {
@@ -22,39 +28,39 @@ ul li {
 	padding: 5px 10px 5px 10px;
 }
 nav ul {
-	
 	margin: 0px;
 	list-style-type: none;
 	padding: 5px 0px 5px 0px;
 }
 
 video {
-	width: 100%;
+	width: 100%; /*宽度沾满整个屏幕*/
 	height: 545px;
 	object-fit:fill;
-  position: absolute;
+  position: absolute; /*不定位不能设置Z轴*/
 	z-index: -9999;
 }
 
 a{
   display: block;
   color:#fff;
-  text-decoration: none;
-  text-align: justify;
+  text-decoration: none; /*去掉超链接下划线*/
+  text-align: justify; /*使每一行宽度相同*/
 
 }
 
 .plat{
-  display: none;
+  display: none; /*隐藏*/
   background-color: #e4002b;
   position: absolute;
   z-index: 9999;
+  padding: 5px;
 }
 
 nav:hover .plat{
-  display: block;
-  clear: both;
-  white-space:nowrap;
+  display: inline-block; /*hover时出现*/
+  white-space:nowrap; /*不换行*/
+  background-color: #a6192e;
 }
 
 nav{
@@ -78,9 +84,6 @@ nav{
   white-space:nowrap;
 }
 
-.plat li:hover>a{
-  background-color: #a6192e;
-}
 
 nav>a:hover{
   border-bottom: 5px solid #fff;
@@ -90,7 +93,9 @@ nav>a:hover{
 }
 
 nav:last-child{
-  float: right;
+  float:right;
+  position: relative;
+  left: 310px;
 }
 
 .tittle{
@@ -119,8 +124,8 @@ nav:last-child{
 .broad :hover{
   transition:color 0.3s linear 0s;
   color: #000;
-  transform:background-color 0.5s linear 0s;
-  background-color: #fff;
+  transform:background-color 0.5s linear 0s; /*颜色平滑变化*/
+  background-color: #fff; /*决定变色的色*/
 }
 
 .plat .plat:hover{
@@ -145,8 +150,8 @@ nav:last-child{
 }
 
 .r1:hover{
-  transform:background-color 0.5s linear 0s;
-  background-color: #6e182e;
+  transform:background-color 0.5s linear 0s; 
+  background-color: #6e182e; 
 }
 
 
@@ -158,11 +163,11 @@ nav:last-child{
   position: absolute;
   right: 2px;
   z-index: -999;
-  transition: all 0.1s;
+  transition: all 0.1s;  /*动画效果持续时间*/
 }
 
 .backgund:hover{
   background-color: #a6192e;
-  transform:scale(1.2);
-  transition:all 0.1s ease-in-out 0s;
+  transform:scale(1.2); /*放大比例*/
+  transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/
 }

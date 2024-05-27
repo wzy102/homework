@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .footerleft{
@@ -20,3 +21,79 @@ footer a:hover{
 .footerright{
   float: right;
 }
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.pic {
+  pointer-events: none;
+}
+
+.backgund1,.backgund2{
+  display: inline-block;
+  background-color: #000;
+  pointer-events: auto;
+  transition: all 0.1s;
+}
+
+.backgund1{
+  padding: 18px 18px;
+}
+
+.backgund2{
+  padding: 21px 50px;
+}
+
+
+.backgund1:hover{
+  transform:scale(1.2);
+  transition:all 0.1s ease-in-out 0s;
+}
+
+.backgund2:hover{
+  transform:scale(1.2);
+  transition:all 0.1s ease-in-out 0s;
+}
+
+.a1 { grid-area: main; }
+.a2 { grid-area: lef; }
+.a3 { grid-area: mid; }
+.a4 { grid-area: rig; }
+.a5 { grid-area: bot; }
+.a6 { grid-area: footer; }
+
+.grid {
+  display: grid;
+  grid:
+  'main main main lef lef mid mid rig rig '
+  'main main main bot bot footer footer footer footer';
+  grid-gap: 0px;
+  border: 1px solid rgb(227,227,227);
+}
+
+.grid>div {
+  text-align: center;
+  font-size: 20px;
+}
+
+.input {
+  background-color: #e4002b; 
+  width: 100%;
+  text-align: center;
+  padding: 27px 0;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.a2,.a3,.a4,.a5,.a6{
+  background-color: rgb(242,242,242);
+  border: 1px solid rgb(227,227,227);
+}
+
