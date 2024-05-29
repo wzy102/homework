@@ -1,8 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 .image1 {
   display: inline-block;
   position: absolute; /*图片定位*/
@@ -20,7 +15,6 @@ header {
   background-color: #e4002b; /*文字样式*/
 	height: 90;
   color: #fff;
-  width:100%
 }
 
 ul li {
@@ -54,13 +48,11 @@ a{
   background-color: #e4002b;
   position: absolute;
   z-index: 9999;
-  padding: 5px;
 }
 
 nav:hover .plat{
-  display: inline-block; /*hover时出现*/
+  display: block; /*hover时出现*/
   white-space:nowrap; /*不换行*/
-  background-color: #a6192e;
 }
 
 nav{
@@ -84,6 +76,9 @@ nav{
   white-space:nowrap;
 }
 
+.plat li:hover>a{
+  background-color: #a6192e;
+}
 
 nav>a:hover{
   border-bottom: 5px solid #fff;
@@ -93,9 +88,7 @@ nav>a:hover{
 }
 
 nav:last-child{
-  float:right;
-  position: relative;
-  left: 310px;
+  float: right;
 }
 
 .tittle{
