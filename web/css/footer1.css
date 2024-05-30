@@ -219,7 +219,7 @@ body {
     border-bottom: 1px solid var(--color-grey-200);
     grid-column: span 3;                                                                   /*       grid        */
     grid-row: span 2;
-    padding: var(--spacing-xs) var(--spacing-component-margin);
+    padding: var(--spacing-m) var(--spacing-xs);
 }
 section {
     scroll-margin-top: 80px;
@@ -263,7 +263,7 @@ a, a:hover, a:visited {
     color: inherit;
 }
 a {
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 0.2em;
     touch-action: manipulation;
@@ -331,9 +331,7 @@ a, button, input {
     text-decoration: none;
 }
 
-a, button, input {
-    font-family: inherit;
-}
+
 .button, button {
     align-items: center;
     background: transparent;
@@ -377,38 +375,7 @@ section {
 }
 
 
-.backgund1{
-    padding: 18px 18px;
-    transition: all 0.1s;
-}
 
-.backgund2{
-    padding: 21px 50px;
-    transition: all 0.1s;
-}
-
-
-.backgund1:hover{
-    transform:scale(1.2);
-    transition:all 0.1s ease-in-out 0s;
-}
-
-.backgund2:hover{
-    transform:scale(1.2);
-    transition:all 0.1s ease-in-out 0s;
-}
-
-
-.backgund{
-transition: all 0.1s;  /*动画效果持续时间*/
-}
-
-.backgund:hover{
-background-color: #000;
-color:#fff;
-transform:scale(1.2); /*放大比例*/
-transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/
-}
 
 .icon--youtube {
     height: 16px;
@@ -431,4 +398,115 @@ transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/
 .global-footer__info-items {
     align-self: flex-start;
     display: inline-block;
+}
+
+body {
+    --met-sans: var(--met-sans-serif), var(--noto-sans-cy), var(--noto-sans-jp), var(--noto-sans-kr), var(--noto-sans-sc);
+}
+
+.global-footer__locations-item {
+    margin-bottom: var(--spacing-s);
+}
+
+.global-footer a {
+    color: var(--color-black);
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.global-footer__links, .global-footer__newsletter {
+    padding: var(--spacing-m) var(--spacing-xs);
+}
+
+.global-footer__social-item {
+    display: inline-block;
+    margin-right: var(--spacing-micro);
+    width: auto;
+}
+
+.global-footer__info-item {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: var(--spacing-micro);
+}
+
+
+.global-footer__logo {
+    display: inline-block;
+    margin-right: var(--spacing-xxs);
+    height: 40px;
+    margin-bottom: var(--spacing-m);
+    vertical-align: top;
+    width: 120px;
+}
+
+.global-footer__location-items {
+        display: inline-block;
+    }
+
+.email-signup_homepage-email__CgW18 {
+    background-color: var(--color-met-red);
+    color: var(--color-white);
+    width: 100%;
+}
+
+.email-signup_wrapper__Gfibu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: var(--productive-width-max);
+    padding-top: 40px;
+}
+.email-signup_label__JK8Pa {
+    color: var(--color-white);
+    display: flex;
+    width: auto;
+}
+
+.email-signup_title__Pc1YD {
+    flex-basis: auto;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 26px;
+    text-align: left;
+}
+
+.email-signup_form-fields__2wGQ_ {
+    align-self: auto;
+    flex-grow: 1;
+    margin: 0 10px;
+    padding-left: 40px;
+}
+
+.email-signup_input-wrapper__H3rWU {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.email-signup_form-fields__2wGQ_ {
+        align-self: center;
+        max-width: 550px;
+    }
+
+.email-signup_input-wrapper__H3rWU input {
+    font-size: 16px;
+    padding-right: 40px;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.email-signup_submit__NvYEd {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 38px;
+    outline: none;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    transition: all .3s;
+    width: 38px;
+    color: #000;
 }
