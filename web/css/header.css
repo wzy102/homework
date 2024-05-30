@@ -119,6 +119,8 @@ nav:last-child{
   color: #000;
   transform:background-color 0.5s linear 0s; /*颜色平滑变化*/
   background-color: #fff; /*决定变色的色*/
+  transform:color 0.5s linear 0s;
+  color: #000;
 }
 
 .plat .plat:hover{
@@ -159,7 +161,7 @@ nav:last-child{
   transition: all 0.1s;  /*动画效果持续时间*/
 }
 
-.backgund:hover{
+.secondary:hover{
   background-color: #a6192e;
   transform:scale(1.2); /*放大比例*/
   transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/

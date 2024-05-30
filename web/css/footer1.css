@@ -1,4 +1,14 @@
-
+.global-footer {
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-grey-200);
+    color: var(--color-black);
+    display: grid;
+    font-family: var(--met-sans);
+    font-size: var(--textsize-xs);
+    grid-template-columns: repeat(1,1fr);
+    line-height: 1.33333;
+    margin: 0 auto;
+}
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     border: 0;
     font: inherit;
@@ -116,7 +126,24 @@ body {
     --color-masthead-text: #fff;
     --masthead-height: 60px;
 }
-
+.__variable_ecbd77 {
+    --noto-sans-sc: "__Noto_Sans_SC_ecbd77";
+}
+.__variable_f7c849 {
+    --noto-sans-kr: "__Noto_Sans_KR_f7c849";
+}
+.__variable_50947a {
+    --noto-sans-jp: "__Noto_Sans_JP_50947a";
+}
+.__variable_16859b {
+    --noto-sans-cy: "__Noto_Sans_16859b";
+}
+.__variable_bfed6e {
+    --austin: "__austin_bfed6e","__austin_Fallback_bfed6e";
+}
+.__variable_abf3df {
+    --met-sans-serif: "__metSans_abf3df","__metSans_Fallback_abf3df";
+}
 
 :root {
     --se-Background: #181818;
@@ -190,7 +217,8 @@ body {
 }
 .global-footer__locations {
     border-bottom: 1px solid var(--color-grey-200);
-    grid-column: span 3;                                                                   /*       grid        */                                                                      /*       grid        */
+    grid-column: span 3;                                                                   /*       grid        */
+    grid-row: span 2;
     padding: var(--spacing-xs) var(--spacing-component-margin);
 }
 section {
@@ -207,8 +235,10 @@ section {
     text-decoration: underline;
 }
 .global-footer__link-container {
-    display: grid;
-    grid-column: span 2;                                                                  /*       grid        */                                        
+    display: grid;                                                                 /*       grid        */                                        
+    grid-column: span 6;
+    grid-row: span 1;
+    grid-template-columns: repeat(auto-fit,minmax(0,1fr));
 }
 .global-footer__links {
     border-bottom: 1px solid var(--color-grey-200);
@@ -228,12 +258,7 @@ section {
     font-weight: 400;
     margin-bottom: var(--spacing-micro);
 }
-.global-footer a {
-    color: var(--color-black);
-    display: inline-block;
-    font-weight: 400;
-    text-decoration: none;
-}
+
 a, a:hover, a:visited {
     color: inherit;
 }
@@ -352,19 +377,58 @@ section {
 }
 
 
+.backgund1{
+    padding: 18px 18px;
+    transition: all 0.1s;
+}
+
+.backgund2{
+    padding: 21px 50px;
+    transition: all 0.1s;
+}
 
 
+.backgund1:hover{
+    transform:scale(1.2);
+    transition:all 0.1s ease-in-out 0s;
+}
+
+.backgund2:hover{
+    transform:scale(1.2);
+    transition:all 0.1s ease-in-out 0s;
+}
 
 
+.backgund{
+transition: all 0.1s;  /*动画效果持续时间*/
+}
 
+.backgund:hover{
+background-color: #000;
+color:#fff;
+transform:scale(1.2); /*放大比例*/
+transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/
+}
 
+.icon--youtube {
+    height: 16px;
+    width: 72px;
+}
 
+.museum-address__name {
+    font-size: var(--textsize-s);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xxs);
+}
 
+.global-footer a {
+    color: var(--color-black);
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
+.global-footer__info-items {
+    align-self: flex-start;
+    display: inline-block;
+}
