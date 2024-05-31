@@ -347,12 +347,11 @@ a, button, input {
     padding: 0;
 }
 .global-footer__info {
-    align-items: center;
-    display: flex;
     flex-direction: row;
-    grid-column: span 9;                                                             /*       grid        */
+    grid-column: span 9;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    display: flex;
     justify-content: space-between;
-    padding: var(--spacing-xxs) var(--spacing-component-margin);
 }
 section {
     scroll-margin-top: 80px;
@@ -509,4 +508,31 @@ body {
     transition: all .3s;
     width: 38px;
     color: #000;
+}
+
+.secondary:hover{
+    transform:olor 0.5s linear 0s; 
+    transform:background-color 0.5s linear 0s; 
+    color: #fff; 
+    background-color: #000; 
+}
+
+.global-footer__social-item{
+    pointer-events: none;  /*忽略图片链接*/
+}
+.back,.back1{
+    display: inline-block;
+    transition: all 0.1s;  /*动画持续时间*/
+    background-color: #000;
+    pointer-events: auto;  /*阻止继承*/
+}
+.back:hover,.back1:hover{
+    transform:scale(1.5);   /*缩放比例*/
+    transition:all 0.1s ease-in-out 0s;   /*动画效果*/
+}
+.back{
+padding: 8px 8px;
+}
+.back1{
+padding: 8px 36px;
 }
