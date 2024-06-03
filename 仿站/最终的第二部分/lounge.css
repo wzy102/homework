@@ -1,0 +1,92 @@
+
+p{
+    margin-top: 250px;
+    margin-left: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.images{
+    display: table-row;
+}
+.P1{
+    background: url(picture/1.png)no-repeat 10px 0 ;
+    background-size: 87%;
+    height: 400px;
+    width: 400px;
+    display: table-cell;
+    margin-top: 50px;
+    margin-left: 10px;
+    transition: all 0.25s;
+
+}
+.P2{
+    margin-right: 20px;
+    background: url(picture/2.png)no-repeat -10px 0;
+    background-size: 95%;
+    height: 400px;
+    width: 400px;
+    transition: all 0.25s;
+    display: table-cell;
+}
+.P3{
+    background: url(picture/3.png)no-repeat;
+    background-size: 90.6%;
+    height: 400px;
+    width: 400px;
+    transition: all 0.25s;
+    display: table-cell;
+}
+.P4{
+    background: url(picture/4.png)no-repeat;
+    background-size: 91.3%;
+    height: 400px;
+    width: 400px;
+    text-align:left;
+    transition: all 0.25s;
+    display: table-cell;
+}
+.P5{
+    background: url(picture/5.png)no-repeat;
+    background-size: 105%;
+    height: 400px;
+    width: 400px;
+    transition: all 0.25s;
+    display: table-cell;
+}
+:hover.P1{
+    transform: scale(1.07);
+}
+:hover.P2{
+    transform: scale(1.07);
+}
+:hover.P3{
+    transform: scale(1.07);
+}
+:hover.P4{
+    transform: scale(1.07);
+}
+:hover.P4{
+    transform: scale(1.07);
+}
+:hover.P5{
+    transform: scale(1.07);
+}
+h1{
+    font-weight: 500;
+    margin-left: 13px;
+}
+.fx{/*方向键*/
+    position: relative;
+    top: -40px;
+    left: -100px;
+
+
+}
+:hover.fx{/*悬停颜色反转*/
+    
+    filter: invert(1);
+}
+a[href='4']{
+    opacity: 1;
+}

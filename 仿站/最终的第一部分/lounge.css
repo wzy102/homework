@@ -1,0 +1,91 @@
+
+.a, .abbr, .acronym, .address, .applet, .article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.shelf_accessibibilityMessage__9rNf1{
+    display: none;
+}
+.exhibition-card_I9{/*图片栏边距*/
+    flex-shrink: 0;
+    max-width: var(--max-width-unclamped);
+    width: 600px;
+    margin: 10px;
+}
+.exhibitions-card_7R{/*图片间距*/
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--color-grey-200);
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-micro);
+    position: relative;
+    width: 100%;
+}
+.exhibition-card_meta_T_lev{/*超链接下方文字缩小*/
+        font-size: 75%;
+}
+
+a:link{
+        color: #000;
+        text-decoration: none;
+}
+.shelf_slider_c2{/*向右横向排列*/
+        display: flex;
+        float: left;
+        gap: var(--spacing-xxs);
+        justify-content: flex-start;
+        margin-bottom: var(--textsize-s);
+        padding: 0 var(--spacing-component-margin);
+        will-change: scroll-position;
+}
+
+
+
+
+
+ h2[href='now']{/*Now on view*/
+    display: block;
+    width: 200px;
+    font-size: 1.5rem;
+}
+
+a[href='1']{/*viwe all*/
+    position: relative;
+    font-size: 1.1rem;
+    left: 1250px;
+    top: 0px;
+}  
+span{/*截止日期字体加大*/
+    font-weight: 120%;
+    font-size: 120%;
+}
+p{/*字体*/
+    margin-top: 5px;
+    font-size: 120%;
+    font-weight:350;
+}
+a:hover{
+    text-decoration: underline;
+}
+.fx{/*方向键*/
+    position: relative;
+    top: 150px;
+    left: -500px;
+
+
+}
+:hover.fx{/*悬停颜色反转*/
+    
+    filter: invert(1);
+}
+a[href='4']{
+    opacity: 1;
+}
+body{
+    overflow: hidden;
+}
