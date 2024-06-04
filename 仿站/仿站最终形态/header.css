@@ -3,11 +3,11 @@
   font-family:'111';
   src: url(./字体包/84d64b4cdf054adb-s.p.woff2);
 }
+@font-face{
+  font-family:'132';
+  src: url(./字体包/84a4b0cac32cffbe-s.p.woff2);
+}
 /*隐藏下方滚动条*/
-/*@font-face{
-  font-family:'112';
-  src: url(./字体包/84d64b4cdf054adb-s.p.woff2);
-}*/
 body{
   overflow-x: hidden;
 }
@@ -15,7 +15,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 /* body{
   font-family: "111";
 } */
@@ -24,9 +23,9 @@ body{
   position: absolute;
   top: 20px;
   left: 100px;
+  z-index: 10;
+  pointer-events: none;
 }
-
-
 
 header {
   background-color: #e4002b;
@@ -34,12 +33,25 @@ header {
   color: #fff;
 }
 
-* {
-  box-sizing: border-box;
+.backgund{
+  display: inline-block;
+  width: 58px;
+  height: 59px;
+  background-color: #e4002b;
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  z-index: -1;
+  transition: all 0.1s;  /*动画效果持续时间*/
+  pointer-events: auto;
 }
-* * {
-  box-sizing: inherit;
+
+.backgund:hover{
+  background-color: #6e182e;
+  transform:scale(1.1); /*放大比例*/
+  transition:all 0.1s ease-in-out 0s;  /*放大效果和持续时间*/
 }
+
 
 
 .r1{
@@ -60,54 +72,33 @@ nav{
 }
 
 .zzz {
-	display: inline;
+	display: block;
   padding: 5px 10px 5px 10px;
   /* margin: 0;
   padding:0; */
 }
+.zzz:hover{
+  background-color: #a6192e;
+}
 video {/*动画*/
 	width: 100%;
-	height: 677px;
+	height: 510px;
 	object-fit:fill;
   position: absolute;
 	z-index: -9999;
   
 }
-.video{
-  width: 700px;
-  height: 500px;
-}
 .tittle {
-	z-index: -9;
+	z-index: 1;
   text-align: center;
   font-size: 70px;
   color: rgb(255, 255, 255);
   position: relative;
   top: -70px;
-  font-family: '111';
 }
-.i1{
-  pointer-events: none;
-}
-.av{
-  height: 10px;
-  width: 100%;
-}
-.backgund{
-  display: inline-block;
-  padding: 29px 29.5px;
-  background-color: #000;
-  transition: all 0.3s;
-  position: relative;
-  z-index: -1;
-  bottom: 58px;
-  pointer-events: auto;
-}
-.backgund:hover{
-  transform:background-color 0.5s linear 0s; 
-  background-color: #6e182e; 
-  transform: scale(1.5);
-}
+
+
+/*单独选择*/
 header a{
   font-weight: bold;
   font-size: 14px;
@@ -163,26 +154,29 @@ nav :first-child:hover{
   width: 16px;
 } 
 
+.tittle,.broad{
+  text-align: center;
+  position: relative;
+  top: 160px;
+  left: 45px;
+  z-index: -1;
+}
+
 .tittle{
   text-align: center;
   font-size: 70px;
   color: #fff;
-  position: relative;
-  top: 150px;
+  font-family: "132";
 }
 
-.broad{
-  text-align: center;
-  position: relative;
-  top: 150px;
-  z-index: -9;
-}
+
 
 .broad>a{
   display: inline-block;
   padding: 9px 14px 9px 14px;
   border: 2px solid #fff; 
   border-radius: 5px;
+  color: #fff;
 }
 
 .broad :hover{
@@ -227,7 +221,7 @@ nav :first-child:hover{
 
 .search{
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: 1400px;
   white-space:nowrap; 
 }
@@ -272,7 +266,7 @@ li.a{
 }
 
 .undefined{
-  height:850px;
+  height:590px;
   width: 1500px;
 }
 
@@ -322,7 +316,6 @@ li.a{
       float: left;
       justify-content: flex-start;
       margin-bottom: var(--textsize-s);
-      padding: 0 var(--spacing-component-margin);
       will-change: scroll-position;
       
 }
@@ -334,10 +327,9 @@ li.a{
 .now[href='now']{/*Now on view*/
   display: block;
   width: 300px;
-  margin-left: 8px;
+  margin-left: 127px;
   /* font-size: 2rem; */
   /* font-weight: bold; */
-  padding: 0 var(--spacing-component-margin);
 }
 .b[href='1']{/*viwe all*/
   position: relative;
@@ -361,7 +353,7 @@ li.a{
 .fx{/*方向键*/
   position: relative;
   top: 200px;
-  left: -500px;
+  left: -550px;
   
 
 }
@@ -369,6 +361,10 @@ li.a{
   padding-left:0px;
 }
 :hover.fx{/*悬停颜色反转*/
+  
+  filter: invert(1);
+}
+:hover.fx1{/*悬停颜色反转*/
   
   filter: invert(1);
 }
@@ -480,8 +476,11 @@ p {
   width: auto;
   z-index: 5;
 }
-
+.component-header_wrapper__kS6_W.component-header_clampedWidth__0VK73 {
+    padding: 0 var(--spacing-component-margin);
+}
 .shelf_slider__c2o5b {
+  position: relative;
   display: flex;
   gap: var(--spacing-xxs);
   justify-content: flex-start;
@@ -490,7 +489,8 @@ p {
   padding: 0 var(--spacing-component-margin);
   will-change: scroll-position;
   position:relative;
-  right:150px;
+  right:120px;
+
 }
 
 
@@ -596,7 +596,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   color: var(--color-green-good-news-400);
   display: flex;
-  font-weight: 500;
+  font-weight: 540;
   line-height: 1;
   margin-bottom: var(--spacing-xxs);
   min-height: 1em;
@@ -618,7 +618,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--spacing-xxs);
 }
 .building-card_info__Sgo7I {
-  font-size: var(--textsize-xs);
+  font-size:12px ;
 }
 
 .building-card_time__VgcQp {
@@ -650,8 +650,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .building-card_days-closed___pEGu {
   color: var(--color-text-accent);
-  font-size: var(--textsize-xs);
+  font-size: 13px;
   line-height: 1.5;
+}
+
+.building-card_days-closed___pEGua {
+  color: var(--color-text-accent);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 28px;
 }
 
 
@@ -765,9 +772,8 @@ body {
   display: grid;
   grid-gap:var(--spacing-s);
   gap:var(--spacing-s);
-  margin-bottom:var(--spacing-m);
   /* box-sizing: inherit; */
-  left: 180px;
+margin-bottom: 0%;
 
 }
 .homepage-promos_promo__yutTN {
@@ -870,7 +876,7 @@ figure{
   padding: 0; */
   vertical-align: baseline;
 }
-a,abbr, acronym, dress, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a,abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   border: 0;
   
   font-size: 100%;
@@ -888,6 +894,9 @@ h2{
   /* font-size: 2.7rem; */
 }
 
+p:last-child{
+  margin-bottom: 0;
+}
 p {
   font-family:'111';
   font-family: inherit;
@@ -910,10 +919,11 @@ a:hover{
 }
 .images{
   display: table-row;
+  margin-left: 105px;
 }
 .P1{
   background: url(images/1.png)no-repeat 10px 0 ;
-  background-size: 87%;
+  background-size: 87.5%;
   height: 400px;
   width: 400px;
   display: table-cell;
@@ -925,7 +935,7 @@ a:hover{
 .P2{
   margin-right: 20px;
   background: url(images/2.png)no-repeat -10px 0;
-  background-size: 95%;
+  background-size: 94.4%;
   height: 400px;
   width: 400px;
   transition: all 0.25s;
@@ -979,10 +989,10 @@ h1{
   margin-left: 13px;
 }
 /*方向键*/
-.fx{  /*方向键*/
+.fx1{  /*方向键*/
   position: relative;
-  top: -40px;
-  left: -100px;
+  top: -250px;
+  left: 1350px;
 
 
 }
@@ -997,10 +1007,12 @@ a[href='4']{
 .qqq{
   font-family: "111";
   font-size: 45px;
+  margin-left: 115px;
+  margin-top: 40px;
 }
 /*施策*/
 
-/* a,abbr, acronym, dress, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+/* a,abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   border: 0;
   
   font-size: 100%;
@@ -1174,7 +1186,7 @@ a, button, input {
   width: 72px;
 }
 
-.museum-dress__name {
+.museum-address__name {
   font-size: var(--textsize-s);
   font-weight: 500;
   margin-bottom: var(--spacing-xxs);
@@ -1196,6 +1208,12 @@ a, button, input {
   margin-bottom: var(--spacing-s);
 }
 
+.global-footer a {
+  color: var(--color-black);
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+}
 
 .global-footer__links, .global-footer__newsletter {
   padding: var(--spacing-m) var(--spacing-xs);
@@ -1312,7 +1330,7 @@ a, button, input {
   font-family: "111";
 }
 
-/* .museum-dress__information-item{
+/* .museum-address__information-item{
   font-family: "111";
 } */
 .global-footer__nav-link{
